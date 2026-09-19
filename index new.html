@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM JAYAPURA</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, Japrax !</h1>
+        <p>Gas Gunakan Portal Ini Untuk Memesan Produk Unggulan yang ada di tong punya Tanah Tercinta Papua.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM Jayapura - Japrax.Sistem Informasi.com</title>
+    
+    <!-- CSS: Mengatur Tampilan dan Desain -->
+    <style>
+        /* CSS Reset & Pengaturan Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        /* Header Utama dengan Tema Lokal */
+        header {
+            background: linear-gradient(135deg, #006633, #00994d); /* Warna khas nuansa alam Papua */
+            color: black;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container Utama */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Card Section */
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+            border-top: 4px solid #006633;
+        }
+
+        .card h2 {
+            color: #006633;
+            margin-bottom: 1rem;
+        }
+
+        /* Grid Produk UMKM */
+        .produk-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 1rem;
+        }
+
+        .produk-item {
+            background: #f1f8f3;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #d0e7d5;
+            text-align: center;
+        }
+
+        .produk-item h3 {
+            font-size: 1.1rem;
+            color: #004d26;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Form & Interaktivitas */
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-kirim {
+            background-color: #e67e22; /* Warna Oranye / Cendrawasih Accent */
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        .btn-kirim:hover {
+            background-color: #d35400;
+        }
+
+        /* Notifikasi Pesanan (Diatur oleh JS) */
+        #notifikasi-pesanan {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            display: none; /* Sembunyi secara default */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1b2a4a;
+            color: #fff;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Judul Web -->
+    <header>
+        <h1>Portal UMKM Jayapura</h1>
+        <p>Mendukung Produk Lokal Dari Tong Punya Tanah Papua - Japrax.UMKM.com</p>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        
+        <!-- Informasi Profil UMKM -->
+        <section class="card">
+            <h2>Tentang Portal UMKM Jayapura</h2>
+            <p>
+                Portal ini saya Rancang untuk mendata dan mempromosikan produk-produk unggulan dari Usaha Mikro, Kecil, dan Menengah (UMKM) di wilayah Kota dan Kabupaten Jayapura. Melalui platform ini, pelaku usaha lokal dapat terhubung langsung dengan calon konsumen.
+            </p>
+        </section>
+
+        <!-- Daftar Produk Lokal -->
+        <section class="card">
+            <h2>Katalog Produk Unggulan Jayapura</h2>
+            <div class="produk-grid">
+                <div class="produk-item">
+                    <h3>☕ Kopi Pegunungan</h3>
+                    <p>Kopi olahan khas lokal dengan cita rasa otentik.</p>
+                </div>
+                <div class="produk-item">
+                    <h3>🧶 Kerajinan Noken</h3>
+                    <p>Tas rajut tradisional khas Papua buatan Mama-Mama Jayapura.</p>
+                </div>
+                <div class="produk-item">
+                    <h3>🐟 Ikan Asar / Asap</h3>
+                    <p>Kuliner olahan ikan segar pilihan khas pesisir Jayapura.</p>
+                </div>
+                <div class="produk-item">
+                    <h3>🌾 Olahan Sagu</h3>
+                    <p>Camilan dan bahan pangan sehat berbasis sagu lokal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Pemesanan Interaktif (JavaScript) -->
+        <section class="card">
+            <h2> Pemesanan Produk</h2>
+            <form id="formPemesanan" onsubmit="prosesPemesanan(event)">
+                <div class="form-group">
+                    <label for="nama">Nama Pembeli:</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="produk">Pilih Produk UMKM:</label>
+                    <select id="produk" required>
+                        <option value="">-- Pilih Produk --</option>
+                        <option value="Kopi Pegunungan">Kopi Pegunungan</option>
+                        <option value="Kerajinan Noken">Kerajinan Noken</option>
+                        <option value="Ikan Asar / Asap">Ikan Asar / Asap</option>
+                        <option value="Olahan Sagu">Olahan Sagu</option>
+                    </select>
+                </div>
+
+              <button type="submit" class="btn-kirim">Kirim Pesanan</button>
+			
+            <!-- Tempat Notifikasi Hasil JavaScript -->
+            <div id="notifikasi-pesanan"></div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Belajar.Sistem Informasi.com | Tugas Kuliah Sistem Informasi Jayapura</p>
+    </footer>
+
+    <!-- JavaScript: Logika Interaktif -->
+    <script>
+        function prosesPemesanan(event) {
+            // Mencegah halaman reload saat form dikirim
+            event.preventDefault();
+
+            // Mengambil input dari pengguna
+            var namaPembeli = document.getElementById("nama").value;
+            var produkDipilih = document.getElementById("produk").value;
+            var notif = document.getElementById("notifikasi-pesanan");
+
+            // Memproses teks notifikasi
+            notif.innerHTML = "<strong>Terima kasih, " + namaPembeli + "!</strong> Pesanan produk <em>" + produkDipilih + "</em> Anda telah dicatat oleh sistem UMKM Jayapura.";
+            
+            // Menampilkan kotak notifikasi
+            notif.style.display = "block";
+
+            // Mengosongkan form kembali
+            document.getElementById("formPemesanan").reset();
+        }
+    </script>
+
+</body>
+</html>
